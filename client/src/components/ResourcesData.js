@@ -16,10 +16,10 @@ const ResourcesTable = (props) => {
             </thead>
             <tbody>
                 <tr>
-                    <td>{props.food}</td>
-                    <td>{props.wood}</td>
-                    <td>{props.stone}</td>
-                    <td>{props.iron}</td>
+                    <td>{Math.floor(props.food)}</td>
+                    <td>{Math.floor(props.wood)}</td>
+                    <td>{Math.floor(props.stone)}</td>
+                    <td>{Math.floor(props.iron)}</td>
                 </tr>
             </tbody>
         </table>

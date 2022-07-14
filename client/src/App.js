@@ -13,7 +13,6 @@ function App() {
             const response = await fetch("http://localhost:5000/mainpage/1234");;
             const jsonData = await response.json();
             setGameData(jsonData);
-
         } catch (err) {
             console.error(err.message);
         }

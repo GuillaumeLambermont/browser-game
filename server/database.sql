@@ -1,21 +1,21 @@
 CREATE DATABASE browsergame;
 
-CREATE TABLE user_data (
+CREATE TABLE user_data(
     user_id int,
     user_name varchar(255),
     user_email varchar(255)
 );
 
-CREATE TABLE game_data (
+CREATE TABLE game_data(
     user_id int,
     food_qty int,
     food_prod float,
     wood_qty int,
-    wood_prod int,
+    wood_prod float,
     stone_qty int,
-    stone_prod int,
+    stone_prod float,
     iron_qty int,
-    iron_prod int,
+    iron_prod float,
     farm_lvl int,
     forum_lvl int,
     lumberjack_lvl int,
@@ -26,17 +26,17 @@ CREATE TABLE game_data (
     academy_lvl int,
     wall_lvl int,
     fort_lvl int,
-    last_updated timestamp
+    last_updated bigint
 );
 
-INSERT INTO game_data VALUES (
+INSERT INTO game_data VALUES(
     1234,
     1000,
     10,
     1200,
-    10,
+    5,
     1300,
-    10,
+    5,
     200,
     1,
     1,
@@ -49,5 +49,7 @@ INSERT INTO game_data VALUES (
     0,
     0,
     0,
-    current_timestamp
+    1657801211205
 );
+
+ 
